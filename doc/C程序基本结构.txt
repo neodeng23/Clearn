@@ -14,3 +14,13 @@ C语言中的6中语句
     选择语句
     迭代语句
     跳转语句
+
+#include<stdio.h>
+    告诉编辑器把stdio.h中的内容包含在当前程序中
+    stdio.h是C编译器软件包的标准部分，它提供键盘输入和屏幕输出的支持
+
+int main(void)      函数名
+    int num;        声明变量
+    num = 1;        变量赋值
+    printf("the num is %d, go go go.\n, num");
+    return 0;
