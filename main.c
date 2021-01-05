@@ -15,8 +15,8 @@ void write_extern(void)
 int main() {
     /* 我的第一个 C 程序 */
 
-    /* 变量定义 */
-    int a, b;
+    /* 声明变量 */
+    int a, b;    /* 一次声明多个变量，用逗号分隔 */
     int c;
     float f;
 

@@ -24,3 +24,12 @@ int main(void)      函数名
     num = 1;        变量赋值
     printf("the num is %d, go go go.\n, num");
     return 0;
+
+
+多个函数的情况：
+    引用的函数会出现多次：
+        函数原型，在开头告诉编译器要使用该函数
+        函数调用，以xxx()的形式出现在main()中
+        函数定义，即函数本身的源代码
+
+

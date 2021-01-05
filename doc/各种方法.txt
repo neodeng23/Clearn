@@ -1,1 +1,5 @@
 getchar()   在return之前添加，执行完后窗口会等待用户的一次击键
+
+scanf()
+    exp: scanf("%f", &aaa)
+    读取键盘的输入，把输入的赋值给名为aaa的变量
