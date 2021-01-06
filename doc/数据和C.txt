@@ -1,8 +1,67 @@
 整数类型变量(int)
 
+    int erns;
+    int hogs, cows, goats;
+        两种方法效果相同，都为int大小的变量赋予名称并分配内存空间
+
+    打印int
+        %d指明了在一行中打印整数的位置
+        使用printf()函数时，要确保转换说明的数量与待打印值的数量相等
+
+    打印其他转换说明：
+        %d  十进制
+        %o  八进制 如果要显示前缀(0) %#o
+        %x  十六进制 如果要显示前缀(0x) %#x    如果要显示前缀(0X) %#X
+
+    其他整数类型：
+        short int(可简写为short)
+            占用存储空间比int小，用于较小数值以节省空间，与int一样是有符号类型
+        long int(可简写为long)
+            占用存储空间比int多，用于较大数值，与int一样是有符号类型
+        long long int(可简写为long long)
+            占用存储空间比long多，用于更大数值，该类型至少占64位，与int一样是有符号类型
+        unsigned int(可简写为unsigned)
+            只使用于非负值的场合，这种类型于有符号类型表示的范围不同
+                16位的unsigned int允许的取值范围是0~65535，而不是-32768~32767，因为用于表示正负号的位现在用于表示另一个二进制位，所以无符号整型可以表示更大的数
+        在C90标准中，添加了unsigned long int或unsign long和unsign short int或unsign short
+        在C99又添加了unsigned long long int或unsigned long long
+        在任何符号类型前面添加关键词signed，可强调使用符号类型的意图
+        目前个人计算级常见的设置是，long long占64位，long占32位，short占16位，int占16位或32位（依计算机的自然字长而定）
+
+        C标准规定了最小大小：
+            16位机：
+                short 和 long的最小范围[-32767, 32767]
+            32位机：
+                long的最小取值范围[-2147483647, 2147483647]
+                unsigned short和unsign int,最小取值范围[0,65535]
+
+        整数溢出：超过范围会从头开始计算
+
+
+字符(char)
+    本质上是整数类型
+    声明char类型变量
+        char res;
+        char itb, latan;
+
+    字符常量：
+        char grade = 'A';
+        用单引号括起来的单个字符被称为字符常量
+
+    非打印字符
+        \a  警报
+        \b  退格
+        \f  换页
+        \n  换行
+        \r  回车
+        \t  水平制表符
+        \v  垂直制表符
+        \\  反斜杠(\)
+        \'  单引号
+        \"  双引号
+        \?  问号
+        \0oo    八进制值，oo必须是有效八进制数
+        \xhh    十六进制值，hh必须是有效十六进制数
+
+
 浮点类型变量(float)
-
-int erns;
-int hogs, cows, goats;
-    两种方法效果相同，都为int大小的变量赋予名称并分配内存空间
-
