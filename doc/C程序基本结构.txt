@@ -25,6 +25,11 @@ int main(void)      函数名
     printf("the num is %d, go go go.\n, num");
     return 0;
 
+定义函数：
+return_type function_name( parameter list )
+{
+   body of the function
+}
 
 多个函数的情况：
     引用的函数会出现多次：

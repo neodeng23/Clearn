@@ -39,7 +39,7 @@
 
 
 字符(char)
-    本质上是整数类型
+    本质上是整数类型，一个字符变量实际上被储存为1字节的整数值
     声明char类型变量
         char res;
         char itb, latan;
@@ -48,7 +48,8 @@
         char grade = 'A';
         用单引号括起来的单个字符被称为字符常量
 
-    非打印字符
+    打印字符：
+        用%c指明待打印字符
         \a  警报
         \b  退格
         \f  换页
@@ -64,4 +65,24 @@
         \xhh    十六进制值，hh必须是有效十六进制数
 
 
+_bool类型：
+    1表示ture
+    0表示false
+    1位存储空间
+
 浮点类型变量(float)
+    C语言规定，float类型至少能表示6位有效数字
+    double至少表示10位有效数字
+
+    打印浮点值：
+    %f  6位小数
+    %g  智能识别有几位
+    %e  打印指数记数法的浮点数
+
+大小：
+    int has a size of 4 bytes
+    char has a size of 1 bytes
+    long has a size of 8 bytes
+    long long has a size of 8 bytes
+    double has a size of 8 bytes
+    long double has a size of 16 bytes
