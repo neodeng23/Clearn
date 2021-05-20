@@ -12,6 +12,20 @@ void write_extern(void)
     printf("count is %d\n", count);
 }
 
+void test(void)
+{
+    int  number = 5;   /* 实际变量的声明 */
+    int  *ptr = &number;        /* 将ptr指向number，赋值为number的地址 */
+
+    *ptr = 100;
+    printf("number's address = [%p]\n", &number  );//number的地址
+    printf("number's value = [%d]\n",number);//number的值
+    printf("ptr's address:%p\n",&ptr);//ptr的地址
+    printf("ptr's value: %p\n", ptr );//ptr的值
+    printf("ptr pointing value:%d\n", *ptr);//ptr指向变量的地址
+
+}
+
 int main() {
     /* 我的第一个 C 程序 */
 
@@ -20,6 +34,7 @@ int main() {
     int c;
     float f;
     char *d = "abcd";
+    int n[ 10 ]; /* n 是一个包含 10 个整数的数组 */
 
     /* 给变量赋值 */
     a = 10;
@@ -36,6 +51,7 @@ int main() {
 
     count = 5;
     write_extern();
+    test();
 
     printf("%s \n", d);
     printf("%sd \n", d);

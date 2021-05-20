@@ -86,3 +86,37 @@ _bool类型：
     long long has a size of 8 bytes
     double has a size of 8 bytes
     long double has a size of 16 bytes
+
+数组范例：
+    int amain ()
+    {
+        int n[ 10 ]; /* n 是一个包含 10 个整数的数组 */
+        int i,j;
+
+        /* 初始化数组元素 */
+        for ( i = 0; i < 10; i++ )    {
+
+            n[ i ] = i + 100; /* 设置元素 i 为 i + 100 */
+        }        /* 输出数组中每个元素的值 */
+        for (j = 0; j < 10; j++ )    {
+            printf("Element[%d] = %d\n", j, n[j] );
+        }
+        return 0;
+    }
+
+指针范例：
+
+    #include <stdio.h>
+    int main ()
+    {
+        int  number = 5;   /* 实际变量的声明 */
+        int  *ptr = &number;        /* 将ptr指向number，赋值为number的地址 */
+
+        printf("number's address = [%p]\n", &number  );//number的地址
+        printf("number's value = [%d]\n",number);//number的值
+        printf("ptr's address:%p\n",&ptr);//ptr的地址
+        printf("ptr's value: %p\n", ptr );//ptr的值
+        printf("ptr pointing value:%d\n", *ptr);//ptr指向变量的地址
+
+        return 0;
+    }

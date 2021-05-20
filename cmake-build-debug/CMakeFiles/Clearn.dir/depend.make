@@ -3,3 +3,5 @@
 
 CMakeFiles/Clearn.dir/main.c.obj: ../main.c
 
+CMakeFiles/Clearn.dir/test.c.obj: ../test.c
+

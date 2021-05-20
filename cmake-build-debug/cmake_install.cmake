@@ -1,4 +1,4 @@
-# Install script for directory: F:/C_code/Clearn
+# Install script for directory: E:/C_Repositories/Clearn
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "F:/C_code/Clearn/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "E:/C_Repositories/Clearn/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
